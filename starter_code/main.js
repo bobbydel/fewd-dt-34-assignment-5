@@ -34,7 +34,6 @@ $(document).ready(function () {
         } else if (input === "sydney" || input === "syd") {
             $("body").css("background-image", "url(images/sydney.jpg)");
         }
-//helps with the drop down properly displaying all the names and not just current one u r typing in
             $("#city-type").val("");
     }
     //submit 
