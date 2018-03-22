@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>City Background</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
+	<title>City Background</title>
 
-	</head>
-	<body>
-		<header>
-			<div class="title">
-				<h1>CitiPix</h1>
-				<p>Your Cities, Your Pix</p>
-			</div>
-		</header>
-			<div class="container">
-				<form>
-					<input type="text" id="city-type" placeholder="Enter a city name...">
-					<input type="submit" value="Update" id="submit-btn">
-				</form>
-			</div>
-	</body>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="title">
+			<h1>CitiPix</h1>
+			<p>Your Cities, Your Pix</p>
+		</div>
+	</header>
+	<div class="container">
+		<form>
+			<input type="text" id="city-type" placeholder="Enter a city name..." list="cityname">
+			<input type="submit" value="Update" id="submit-btn">
+			<!-- adding drop down list for only cities available -->
+
+			<datalist id="cityname">
+				<option value="New York City">
+					<option value="Austin">
+						<option value="Los Angeles">
+							<option value="San Francisco">
+								<option value="Sydney">
+			</datalist>
+		</form>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+
+	<script src="main.js"></script>
+</body>
+
 </html>
